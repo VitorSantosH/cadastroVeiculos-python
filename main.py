@@ -1,3 +1,7 @@
+import os
+
+def limpar():
+    os.system("cls" if os.name == "nt" else "clear")
 class Fabricante:
     def __init__(self, nome):
         self.nome = nome
@@ -53,9 +57,12 @@ def autoCadastrar(lista):
 
 if __name__ == "__main__":
 
+
+    limpar()
+
     lista = []
     finalizar = True
-
+    
     while finalizar:
         option = input(
             "Digite a opção desejada: \n"
@@ -66,8 +73,10 @@ if __name__ == "__main__":
 
         match option:
             case "1":
+                limpar()
                 imprimir(lista)
             case "2":
+                limpar()
                 lista = cadastrar(lista)
             case "3":
                 print("Finalizando o programa...")
