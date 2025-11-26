@@ -48,6 +48,8 @@ def autoCadastrar(lista):
     cadastrar(lista, Carro("Vermelho", 2020, "Ka", f1, "KKK-2020"))
     cadastrar(lista, Carro("Azul", 2012, "Polo", f2, "POL-3012"))
 
+    return lista
+
 
 if __name__ == "__main__":
 
